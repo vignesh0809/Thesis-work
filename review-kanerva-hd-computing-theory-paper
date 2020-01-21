@@ -1,0 +1,232 @@
+Review Paper - 1
+
+
+Hyperdimensional Computing: An Introduction to Computing in Distributed Representation with High-Dimensional Random Vectors
+
+Pentti Kanerva
+
+Theoretical background
+
+Emphasis on computing with high dimensional random vectors , whose properties though subtle can be used for computing. The paper seeks to demonstrate the “arithmetic” operations on these vectors
+
+Computation is the transformation of representations in accordance with algorithms based on certain rules.
+It however starts to make sense however only when the patterns correspond to entities in the real world in a systematic manner, this is an engineering perspective to it.
+ 
+
+Logic - the means by which the algorithm is implemented, depends on the representation chosen. 
+
+Computers use binary representation extensively. The representation is essentially a binary vector. 
+
+Representation must be discriminate 
+
+Representation must be suited for arithmetic.
+
+Representation is often a compromise what might suit one operation might adversely affect the computational efficiency of another operation. Eg. Representation of numbers as a product of its constituent prime factors eases multiplication, but complicates addition.
+For overall compute efficiency, the base-2 system is fine.
+
+Context effects - These to lead to reductions in performance and reliability due to a choice of representation in favor of maybe more vital functions?
+
+**The important properties of representation follow from high dimensionality rather than from the precise nature of the dimensions.
+
+Higher dimensionality can be more of a boon than a bane as it has shown to greatly ease implementation of logic, for instance addition using 32-bit binary representations of numbers,
+It makes for higher precision and lower complexity  of circuits and algorithms.
+
+**Dimensionality of an entity and the dimensionality of its representation for computing are separate issues - one deals with existence and interpretation whereas the other deals with suitability for computing. 
+
+Hyperspaces have subtle properties on which we can base computing.
+
+In the hyperdimensional realm, equivalent patterns can differ at a lot of places due to the high dimensionality.
+
+Holistic representations, maximum robustness occurs when the information encoded is spread over all the bits.
+
+The closer we are to the epidermis, the more clearly positions of an individual component that is the cause of the stimulus can be determined. At higher levels of cognition this positional information is lost.
+
+To simulate randomness in brain architecture,the model picks random vectors from the hyperspace.
+
+If random origins can lead to compatible systems, incompatibility of hardware ceases to be an issue.
+
+Randomness is the path of least assumptions
+
+Memory Design
+
+https://revisionmaths.com/advanced-level-maths-revision/statistics/normal-approximations -  for all the binary approximation to the normal carried out here
+
+Item memory - 
+
+A catalog of hypervectors that represent meaningful entities.
+ It is AUTOASSOCIATIVE
+
+CLEANUP MEMORY -  nOISY SEARCHES WHEN PERFORMED IN A CONTENT ADDRESSABLE MEMORY - DUE TO THE NEAREST NEIGHBOUR APPROACH TEND TO RESULT IN RETRIEVAL OF THE NOISE FREE DATA.
+
+In autoassociative memories it is likely that elements may have distinct meaning but might be similar, which can result in nearest neighbour searches, such as those needed  by autoassociative memory being hindered. Solution to this is to have a provision to transform a pattern- map it to a different part of space before storing it, this however needs to be reversible.
+
+Hetero-associative
+
+Associative memories are those where a certain element(type-data) can be accessed using a certain pattern(type-address). A further addition is also that the element(type-data) can be accessed by a similar(noisy) element(type-address).
+
+Autoassociative
+
+Associative memories where element(type-data) can be accessed by the element itself or a noisy version of itself→ Robust memory
+Recovery of data often happens in stages, with a very noisy version is used to access a less noisy version which is used to access a further less noisy version and so on.
+
+The data element is called the point attractor, space surrounding it is the basin of attraction
+And this is called content addressable memory(as the very content its stores, is in a way used to access it.
+
+Comparison of two vectors - dot product(cosine) is often a weighting factor
+Normalization is achieved by weighting.
+
+Hamming distance the number of bit positions at which two vectors differ, denoted by modulo of the product- essentially when two vectors are multiplied the bit positions at which they differ , become ones. And hence the modulo here is meant to count the number of ones in that vector.
+
+
+
+
+
+Addition 
+
+When the arithmetic sum vector is normalised it yields the mean vector.
+
+The sum(and the mean) of random vectors are similar to each of the vectors involved in the computation -  the sum vector at times acts as a representation of the set that makes up the sum.
+
+Adding a vectors complement - subtraction.
+
+Multiplication - 
+For real vectors - multiply each element with -1, for binary -> flip bits
+1-Two vectors can be multiplied to form an inner product which is a number(scalar) - > can be used as measure of similarity.
+
+2- Two vectors can be multiplied so as to form an outer product - nx1 * 1xm
+
+3- it can even be multiplication of a matrix with a vector.
+
+Componentwise XOR is a form of multiplication, and the (-1,1) system has the component wise xor replaced with ordinary multiplication.
+
+XOR commutes, and a vector is its own inverse - the null vector is the identity here :p
+
+The aforementioned multiplication types are heterogenous in that they involve vectors, matrices and scalars , whereas addition is homogenous, operands are of the same type.
+
+Homogenous multiplication if included can lead to a powerful system, one which is closed under multiplication and addition.
+
+– multiplication is invertible, i.e., no information is lost,
+– multiplication distributes over addition,
+– multiplication preserves distance and, as a rule,
+– product is dissimilar to the vectors being multiplied.
+
+Multiplication is a means to map, and multiplication randomizes.
+
+Mapping also preserves the noise. If a vector has noise f and another has noise g, the amount of noise in the product is f+g-2fg
+
+
+Permutation
+
+Permutation matrices - exactly one 1 in every row and every column.
+
+
+The properties of permutation - 
+
+It is invertible
+It is distributive
+Distances are preserved
+Result is dissimilar to the operand
+
+Permutations need to be thought of as an n dimensional vector whose individual components are integers from 1 to n. Indicating the permuted positions for an initial position. 
+
+The similarity or dissimilarity of two different permutations , depends on the vector being operated on. Let’s say the number of positions where the two permutations are the same are ‘a’, then the positions where the two differ is  ‘n-a’, so the chance that the xor at those positions results in a match is n-a/2. 
+
+Random permutations randomize - two permutations drawn at random agree at on an average only 1 position i.e a = 1 . Therefore, on an average, the distance between two randomly drawn permutations is 5000. 
+
+
+Making a set of Representations
+
+A system of internal representations, cognitive code.
+
+The structure of representations shouldnt be as important in understanding a systems operation, as compared to the way representations computed from one other.
+
+POINTERS ARE REPLACED WITH HYPERVECTORS
+MEMORY IS CONTENT ADDRESSABLE
+ALUs are replaced with hyperdimensional arithmetic
+
+Smallest unit of a cognitive code is a hypervector.
+
+The hypervector provides us with a massive space from which we can draw vectors at random to represent meaningful entities, which might not have previously existed.
+These once drawn are placed in the item memory.
+Easy of making orthogonal vectors-hyperdimensional space is great.
+
+Sets and Multisets
+
+A sum of the constituents is representative of the set as a whole
+
+Procedure to find elements-
+Memory is probed using the sum vector - frst this is recovered by inverting
+Then when memory is probed - each element when found is subtracted off the sum vector and the difference is again used to probe, this way all elements in the set can be accessed.
+
+The method fails if the unmapped sum is stored in the memory , hence if it is to be stored it first needs to be mapped to another space and then stored.
+
+We can even search for the sets that contain a certain element , by mapping the element to that space(using the same mapping), and then probing the memory with the mapped element.
+
+ A set has types, a multiset or bag has tokens
+
+Multisets can have multiple occurrences of the same element.
+
+Sequences 
+
+Sequences that are stored as pointer chains in an associative memory, work in the following way, 
+
+the sequence a-b-c-d-e is encoded as a points to b which points to c and so on
+
+the issue lies with sequences that share elements, as in that case the next elemenent that will be fetched is left to chance- unless of course we encode some of the history too
+
+sequences can be represented with permuting sums.
+
+more and more of the history can be included when a sequence is stored. Whats also possible is weighting the history,when normalizing the sum.
+
+then again how best to encode is dependent on the stats of the sequence.
+
+pairs can also be represented with vector multiplication, the over-performance of the XOR operation can be compensated for by adding in a permutation, to differentiate between the order of multiplicands.
+
+Records can be represented as bindings between variable and value pairs , and the XOR operation makes retrieval of either piece of information in a record very easy, by unbinding.
+
+Analogy
+
+Subbstituting in a set of particulars for another, as a means of interpretation.
+
+The math to perform such a cognitive task in our system is fairly simple, the previously bound pair just has to be multiplied with the pair that represents the substitution.
+
+whats even powerful is the ability to perform multiple substitutions in a single record by a holistic record for the substitution.
+
+one thing which needs to be kept in mind however that fetching the full record from an incomplete form of substitutions that define an analogy might not be possible.
+
+Context Vectors as examples for sets -  Random Indexing
+
+similar or related meanings appear in the similar context and should thus give us similar hypervectors.
+
+the context vector is computed from the various contexts that a word can be in.
+
+the context can either be thought of as a word window(can be characterized as a multiset of the words the have been found in the context window) or as a document(multiset of the documents in which a given word appears.
+
+Latent semantic analysis, incolves collection of words into matrices, where the rows represnt the words and the columns could either represent the documents or the words in the context window. the column contains the number of occurences of a certain word in the document.
+
+This leads to a sparse representation, but extraction of principal components in such a huge matrix is difficult , also the additionof more documents or words is difficult.
+
+In the method of random indexing using hypervectors, we have a hypervector for each word, and the document activates some columns randomly selected.
+
+each document activates its set of columns in the words hypervector when a word is found in it. 
+
+this method, does not need the memory to be expanded to accomodate more documents, it can even be designed to accomodate more words. 
+
+Reasoning with statements
+
+we represent a statement as rector, with the variables, bound with their respective values. A deduction based on the statement is simply a multiplication between two statements one is what is what is given and the other what can be deduced.
+
+when carrying out an inference based on this deduction, we must multiply the new statement with the deduction.
+
+Was ist der Dollar Von Mexico?
+
+Since the role of the dollar is known in another context, we unbind the record we know that contains the dollars context with the dollar, to get the role the dollar plays. we then unbind the corresponding record for mexico 
+and get the peso.
+
+
+
+
+
+
+
+
